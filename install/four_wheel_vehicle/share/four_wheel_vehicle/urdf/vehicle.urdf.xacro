@@ -1,0 +1,9 @@
+<?xml version ="1.0"?>
+<robot name="four_wheel_vehicle" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename = "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/urdf/common_properties.xacro"/>
+    <xacro:include filename = "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/urdf/base.xacro"/>
+    <xacro:include filename = "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/urdf/camera.xacro"/>
+    <xacro:include filename = "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/urdf/base_gazcbo.xacro"/>
+    
+</robot>

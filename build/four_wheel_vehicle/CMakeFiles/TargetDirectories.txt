@@ -1,0 +1,9 @@
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/uninstall.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/four_wheel_vehicle_uninstall.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/test.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/edit_cache.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/rebuild_cache.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/list_install_components.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/install.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/install/local.dir
+/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/install/strip.dir

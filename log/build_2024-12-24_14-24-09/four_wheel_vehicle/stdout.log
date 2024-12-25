@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf
+-- Installing: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/camera.xacro
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/base.xacro
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/vehicle.urdf.xacro
+-- Installing: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/common_properties.xacro
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//launch
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//launch/display_vehicle.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/ament_index/resource_index/package_run_dependencies/four_wheel_vehicle
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/ament_index/resource_index/parent_prefix_path/four_wheel_vehicle
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/path.sh
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/path.dsv
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.bash
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.sh
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.zsh
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.dsv
+-- Installing: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.dsv
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/ament_index/resource_index/packages/four_wheel_vehicle
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/cmake/four_wheel_vehicleConfig.cmake
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/cmake/four_wheel_vehicleConfig-version.cmake
+-- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.xml
