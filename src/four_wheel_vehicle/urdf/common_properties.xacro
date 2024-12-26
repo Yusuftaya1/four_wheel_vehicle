@@ -67,13 +67,12 @@
         </joint>
     </xacro:macro>
 
-    <xacro:macro name = "wheel_joint" params="prefix x y z">
-        <joint name="${prefix}_wheel_joint" type="revolute">
+    <xacro:macro name="wheel_joint" params="prefix x y z">
+        <joint name="${prefix}_wheel_joint" type="continuous">
             <parent link="base_link"/>
             <child link="${prefix}_wheel_link"/>
             <origin xyz="${x} ${y} ${z}" rpy="0 0 0"/>
             <axis xyz="0 1 0"/>
-            <limit effort="100" velocity="10" lower="0" upper="3.14"/>
-        </joint>    
+        </joint>
     </xacro:macro>
 </robot>

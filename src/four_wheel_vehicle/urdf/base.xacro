@@ -40,38 +40,11 @@
 
     <xacro:base_joint/>
  
-    <joint name="front_left_wheel_joint" type="revolute">
-        <parent link="base_link"/>
-        <child link="front_left_wheel_link"/>
-        <origin xyz="${base_length / 2.5} ${(base_width / 2.0) + (wheel_length / 2.0)} 0" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
-        <limit effort="100" velocity="10" lower="0" upper="3.14"/>
-    </joint>
-
-    <joint name="front_right_wheel_joint" type="revolute">
-        <parent link="base_link"/>
-        <child link="front_right_wheel_link"/>
-        <origin xyz="${base_length / 2.5} -${(base_width / 2.0) + (wheel_length / 2.0)} 0" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
-        <limit effort="100" velocity="10" lower="0" upper="3.14"/>
-    </joint>
-
-    <joint name="rear_left_wheel_joint" type="revolute">
-        <parent link="base_link"/>
-        <child link="rear_left_wheel_link"/>
-        <origin xyz="-${base_length / 2.5} ${(base_width / 2.0) + (wheel_length / 2.0)} 0" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
-        <limit effort="100" velocity="10" lower="0" upper="3.14"/>
-    </joint>
-
-    <joint name="rear_right_wheel_joint" type="revolute">
-        <parent link="base_link"/>
-        <child link="rear_right_wheel_link"/>
-        <origin xyz="-${base_length / 2.5} -${(base_width / 2.0) + (wheel_length / 2.0)} 0" rpy="0 0 0"/>
-        <axis xyz="0 1 0"/>
-        <limit effort="100" velocity="10" lower="0" upper="3.14"/>
-    </joint>
-
+    <xacro:wheel_joint prefix="front_left" x="${base_length / 2.5}" y="${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
+    <xacro:wheel_joint prefix="front_right" x="${base_length / 2.5}" y="-${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
+    <xacro:wheel_joint prefix="rear_left" x="-${base_length / 2.5}" y="${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
+    <xacro:wheel_joint prefix="rear_right" x="-${base_length / 2.5}" y="-${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
+    
 
 
 </robot>
