@@ -18,13 +18,13 @@
                 <box size = "${camera_length} ${camera_width} ${camera_height}"/>
             </geometry>
         </collision>
-
+        <xacro:box_inertia  m="0.1" l="${camera_length}" w = "${camera_width}" h= "${camera_height}"  xyz="0 0 0" rpy="0 0 0"/>
     </link>
 
     <joint name = "base_camera_joint" type = "fixed">
         <parent link = "base_link"/>
         <child link = "camera_link"/>
-        <origin xyz = "${(base_length + camera_length) / 2.0} 0 ${base_height /2}" rpy = "0 0 0"/>
+        <origin xyz = "${(base_length + camera_length) / 2.0} 0 ${base_height-(camera_height/2.0)}" rpy = "0 0 0"/>
     </joint>
 
     <gazebo reference = "camera_link">
