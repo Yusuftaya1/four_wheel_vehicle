@@ -14,7 +14,6 @@ def generate_launch_description():
         DeclareLaunchArgument('urdf_path', default_value=urdf_path, description='Path to the robot URDF'),
         DeclareLaunchArgument('rviz_config_path', default_value=rviz_config_path, description='Path to the RViz config file'),
 
-        # Set use_sim_time parameter
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
