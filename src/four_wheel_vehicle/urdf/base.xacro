@@ -46,5 +46,4 @@
     <xacro:wheel_joint prefix="rear_right" x="-${base_length / 2.5}" y="-${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
     
 
-
 </robot>

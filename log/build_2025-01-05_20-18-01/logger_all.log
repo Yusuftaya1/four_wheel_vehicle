@@ -1,0 +1,243 @@
+[0.241s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.241s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77a3a3a3e080>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77a3a3a3db40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77a3a3a3db40>>, mixin_verb=('build',))
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.605s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.605s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tayya/four_wheel_ws'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extensions ['ignore', 'ignore_ament_install']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'ignore'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'ignore_ament_install'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extensions ['colcon_pkg']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'colcon_meta'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extensions ['ros']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'ros'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extensions ['cmake', 'python']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'cmake'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'python'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extensions ['python_setup_py']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model) by extension 'python_setup_py'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'ignore_ament_install'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extensions ['colcon_meta']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'colcon_meta'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extensions ['ros']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'ros'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extensions ['cmake', 'python']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'cmake'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'python'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes) by extension 'python_setup_py'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'ignore_ament_install'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extensions ['colcon_pkg']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'colcon_pkg'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extensions ['colcon_meta']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'colcon_meta'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extensions ['ros']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'ros'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extensions ['cmake', 'python']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'cmake'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'python'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extensions ['python_setup_py']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_model/meshes/model) by extension 'python_setup_py'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extension 'ignore'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extension 'ignore_ament_install'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extensions ['colcon_pkg']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extension 'colcon_pkg'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extensions ['colcon_meta']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extension 'colcon_meta'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extensions ['ros']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_wheel_vehicle) by extension 'ros'
+[0.646s] DEBUG:colcon.colcon_core.package_identification:Package 'src/four_wheel_vehicle' with type 'ros.ament_cmake' and name 'four_wheel_vehicle'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.649s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.711s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.715s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/tayya/four_wheel_ws/install
+[0.718s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 282 installed packages in /opt/ros/humble
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'cmake_target' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'cmake_clean_first' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'cmake_force_configure' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'ament_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'four_wheel_vehicle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.802s] DEBUG:colcon.colcon_core.verb:Building package 'four_wheel_vehicle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tayya/four_wheel_ws/build/four_wheel_vehicle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tayya/four_wheel_ws/install/four_wheel_vehicle', 'merge_install': False, 'path': '/home/tayya/four_wheel_ws/src/four_wheel_vehicle', 'symlink_install': False, 'test_result_base': None}
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.803s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.804s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.804s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tayya/four_wheel_ws/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tayya/four_wheel_ws/install/robot_bringup', 'merge_install': False, 'path': '/home/tayya/four_wheel_ws/src/robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.804s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.806s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.807s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tayya/four_wheel_ws/src/four_wheel_vehicle' with build type 'ament_cmake'
+[0.807s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tayya/four_wheel_ws/src/four_wheel_vehicle'
+[0.811s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.811s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.811s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.819s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tayya/four_wheel_ws/src/robot_bringup' with build type 'ament_cmake'
+[0.819s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tayya/four_wheel_ws/src/robot_bringup'
+[0.820s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.820s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/four_wheel_vehicle -- -j8 -l8
+[0.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tayya/four_wheel_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/robot_bringup -- -j8 -l8
+[0.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/four_wheel_vehicle -- -j8 -l8
+[0.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/four_wheel_vehicle
+[0.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tayya/four_wheel_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/robot_bringup -- -j8 -l8
+[0.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tayya/four_wheel_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/robot_bringup
+[0.970s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(four_wheel_vehicle)
+[0.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/four_wheel_vehicle
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle' for CMake module files
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle' for CMake config files
+[0.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('four_wheel_vehicle', 'cmake_prefix_path')
+[0.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/hook/cmake_prefix_path.ps1'
+[0.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/hook/cmake_prefix_path.dsv'
+[0.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/hook/cmake_prefix_path.sh'
+[0.988s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/bin'
+[0.988s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/lib/pkgconfig/four_wheel_vehicle.pc'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/lib/python3.10/site-packages'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/bin'
+[0.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.ps1'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.dsv'
+[0.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.sh'
+[0.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.bash'
+[0.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.zsh'
+[0.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/colcon-core/packages/four_wheel_vehicle)
+[1.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(four_wheel_vehicle)
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle' for CMake module files
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle' for CMake config files
+[1.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('four_wheel_vehicle', 'cmake_prefix_path')
+[1.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/hook/cmake_prefix_path.ps1'
+[1.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/hook/cmake_prefix_path.dsv'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/hook/cmake_prefix_path.sh'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/bin'
+[1.005s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/lib/pkgconfig/four_wheel_vehicle.pc'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/lib/python3.10/site-packages'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/bin'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.ps1'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.dsv'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.sh'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.bash'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.zsh'
+[1.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/colcon-core/packages/four_wheel_vehicle)
+[1.016s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup' for CMake module files
+[1.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tayya/four_wheel_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/robot_bringup
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup' for CMake config files
+[1.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[1.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[1.022s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[1.024s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/bin'
+[1.024s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/lib/python3.10/site-packages'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/bin'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.dsv'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.sh'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.bash'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.zsh'
+[1.031s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tayya/four_wheel_ws/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[1.033s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[1.034s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup' for CMake module files
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup' for CMake config files
+[1.035s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[1.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/bin'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[1.040s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/lib/python3.10/site-packages'
+[1.040s] Level 1:colcon.colcon_core.environment:checking '/home/tayya/four_wheel_ws/install/robot_bringup/bin'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.ps1'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.dsv'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.sh'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.bash'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/package.zsh'
+[1.046s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tayya/four_wheel_ws/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[1.046s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.047s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.047s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.047s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.058s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.058s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.058s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.084s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tayya/four_wheel_ws/install/local_setup.ps1'
+[1.089s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tayya/four_wheel_ws/install/_local_setup_util_ps1.py'
+[1.096s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tayya/four_wheel_ws/install/setup.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tayya/four_wheel_ws/install/local_setup.sh'
+[1.103s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tayya/four_wheel_ws/install/_local_setup_util_sh.py'
+[1.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tayya/four_wheel_ws/install/setup.sh'
+[1.107s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tayya/four_wheel_ws/install/local_setup.bash'
+[1.108s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tayya/four_wheel_ws/install/setup.bash'
+[1.110s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tayya/four_wheel_ws/install/local_setup.zsh'
+[1.112s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tayya/four_wheel_ws/install/setup.zsh'

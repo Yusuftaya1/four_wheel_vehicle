@@ -2,13 +2,15 @@ import launch
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, FindPackageShare
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory  # Bu import doğru
+
 import os
 
 def generate_launch_description():
-    urdf_path = LaunchConfiguration('urdf_path', default=os.path.join(FindPackageShare('four_wheel_vehicle'), 'urdf', 'vehicle.urdf.xacro'))
-    rviz_config_path = LaunchConfiguration('rviz_config_path', default=os.path.join(FindPackageShare('robot_bringup'), 'rviz', 'gzb_rviiz.rviz'))
+    urdf_path = LaunchConfiguration('urdf_path', default=os.path.join(get_package_share_directory('four_wheel_vehicle'), 'urdf', 'vehicle.urdf.xacro'))
+    rviz_config_path = LaunchConfiguration('rviz_config_path', default=os.path.join(get_package_share_directory('robot_bringup'), 'rviz', 'gzb_rviiz.rviz'))
 
     return LaunchDescription([
         DeclareLaunchArgument('urdf_path', default_value=urdf_path, description='Path to the robot URDF'),
@@ -33,7 +35,7 @@ def generate_launch_description():
         # Include Gazebo launch file
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(FindPackageShare('gazebo_ros'), 'launch', 'gazebo.launch.py')
+                os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
             )
         ),
 
