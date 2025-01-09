@@ -1,0 +1,5 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find "/home/tayya/four_wheel_ws/src/robot_bringup/map":
+  No such file or directory.
+
+[0m

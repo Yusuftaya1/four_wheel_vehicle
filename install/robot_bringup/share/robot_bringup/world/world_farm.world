@@ -265,50 +265,6 @@
       </link>
       <pose>10.8087 14.2427 0 0 -0 0</pose>
     </model>
-    <model name='hedge_3'>
-      <static>1</static>
-      <link name='link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>1 0.1 0.2</scale>
-              <uri>model://hedge_2_/model.dae</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://hedge_2_/model/Standard_1.JPG</uri>
-              <name>Standard_1</name>
-            </script>
-          </material>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <scale>1 0.1 0.2</scale>
-              <uri>model://hedge_2_/model.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>5.15421 6.64203 0 0 -0 0</pose>
-    </model>
     <model name='ground'>
       <static>1</static>
       <link name='link'>
@@ -352,50 +308,6 @@
         <kinematic>0</kinematic>
       </link>
       <pose>16.1373 -0.708324 0 0 -0 0</pose>
-    </model>
-    <model name='hedge_4'>
-      <static>1</static>
-      <link name='link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>1 0.1 0.2</scale>
-              <uri>model://hedge_2_/model.dae</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://hedge_2_/model/Standard_1.JPG</uri>
-              <name>Standard_1</name>
-            </script>
-          </material>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <scale>1 0.1 0.2</scale>
-              <uri>model://hedge_2_/model.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>-9.2744 16.9341 0 0 -0 0</pose>
     </model>
     <model name='hedge_3_clone'>
       <static>1</static>
@@ -2510,10 +2422,10 @@
       <pose>12.1898 10.7464 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>567 261000000</sim_time>
-      <real_time>41 563532556</real_time>
-      <wall_time>1736428218 738347263</wall_time>
-      <iterations>41147</iterations>
+      <sim_time>692 183000000</sim_time>
+      <real_time>40 553573243</real_time>
+      <wall_time>1736430927 793169836</wall_time>
+      <iterations>40064</iterations>
       <model name='ground'>
         <pose>16.1373 -0.708324 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2984,16 +2896,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='hedge_3'>
-        <pose>-0.62596 4.73501 0 0 0 -1.57065</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-0.62596 4.73501 0 0 0 -1.57065</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='hedge_3_clone'>
         <pose>16.0784 4.68776 0 0 0 -1.57065</pose>
         <scale>1 1 1</scale>
@@ -3009,16 +2911,6 @@
         <scale>1 1 1</scale>
         <link name='link'>
           <pose>16.042 6.82347 0 0 0 -1.57065</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='hedge_4'>
-        <pose>-0.641569 8.53775 0 0 -0 1.57104</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-0.641569 8.53775 0 0 -0 1.57104</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -3080,7 +2972,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>6.08302 -9.38491 18.7221 0 0.937797 1.54818</pose>
+        <pose>6.23308 -9.53976 12.2153 -0 0.829796 1.61618</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
