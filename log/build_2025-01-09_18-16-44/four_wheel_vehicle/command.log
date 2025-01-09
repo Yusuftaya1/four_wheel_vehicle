@@ -1,0 +1,4 @@
+Invoking command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/four_wheel_vehicle -- -j8 -l8
+Invoked command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/four_wheel_vehicle -- -j8 -l8
+Invoking command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/four_wheel_vehicle
+Invoked command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/four_wheel_vehicle

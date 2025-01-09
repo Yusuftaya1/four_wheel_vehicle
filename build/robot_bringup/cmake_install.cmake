@@ -47,6 +47,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/tayya/four_wheel_ws/src/robot_bringup/launch"
     "/home/tayya/four_wheel_ws/src/robot_bringup/rviz"
     "/home/tayya/four_wheel_ws/src/robot_bringup/world"
+    "/home/tayya/four_wheel_ws/src/robot_bringup/map"
     )
 endif()
 

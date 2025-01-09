@@ -1,0 +1,9 @@
+-- Install configuration: ""
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/robot_gazebo.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/robot_joy_control.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/joy_tr.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//rviz
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//rviz/gzb_rviiz.rviz
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//world
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//world/world_farm.world
