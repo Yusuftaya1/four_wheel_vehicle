@@ -1,0 +1,13 @@
+-- Install configuration: ""
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch
+-- Installing: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/robot_gazebo.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/robot_joy_control.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/joy_tr.launch.py
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//rviz
+-- Up-to-date: /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//rviz/gzb_rviiz.rviz
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/tayya/four_wheel_ws/src/robot_bringup/gazebo_world": No such file or
+  directory.
+
+[0m

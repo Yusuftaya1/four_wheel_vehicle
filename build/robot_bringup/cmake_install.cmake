@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_bringup/" TYPE DIRECTORY FILES
     "/home/tayya/four_wheel_ws/src/robot_bringup/launch"
     "/home/tayya/four_wheel_ws/src/robot_bringup/rviz"
+    "/home/tayya/four_wheel_ws/src/robot_bringup/world"
     )
 endif()
 

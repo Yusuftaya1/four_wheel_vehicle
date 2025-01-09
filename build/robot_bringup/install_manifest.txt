@@ -2,6 +2,7 @@
 /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/robot_joy_control.launch.py
 /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//launch/joy_tr.launch.py
 /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//rviz/gzb_rviiz.rviz
+/home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup//world/world_farm.world
 /home/tayya/four_wheel_ws/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
 /home/tayya/four_wheel_ws/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
 /home/tayya/four_wheel_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh

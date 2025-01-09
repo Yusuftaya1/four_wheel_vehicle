@@ -1,20 +1,21 @@
+import os
 import launch
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory  # Bu import doğru
-
-import os
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     urdf_path = LaunchConfiguration('urdf_path', default=os.path.join(get_package_share_directory('four_wheel_vehicle'), 'urdf', 'vehicle.urdf.xacro'))
     rviz_config_path = LaunchConfiguration('rviz_config_path', default=os.path.join(get_package_share_directory('robot_bringup'), 'rviz', 'gzb_rviiz.rviz'))
+    world_path = LaunchConfiguration('world_path', default=os.path.join(get_package_share_directory('robot_bringup'),'world','world_farm.world'))
 
     return LaunchDescription([
         DeclareLaunchArgument('urdf_path', default_value=urdf_path, description='Path to the robot URDF'),
         DeclareLaunchArgument('rviz_config_path', default_value=rviz_config_path, description='Path to the RViz config file'),
+        DeclareLaunchArgument('world_path', default_value=world_path, description='Path to world'),
 
         Node(
             package='robot_state_publisher',
@@ -32,14 +33,14 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}]
         ),
 
-        # Include Gazebo launch file
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
-            )
+            ),
+            launch_arguments={'world': world_path}.items()
         ),
 
-        # Spawn entity in Gazebo
+
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250106-1236-Experimental"
+	Name="Asus-Ubuntu"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="Asus-Ubuntu"
+	OSRelease="6.8.0-50-generic"
+	OSVersion="#51~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 21 12:03:03 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="126"
+	ProcessorCacheSize="6144"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15733"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1270.4"
+	>
+	<Testing>
+		<StartDateTime>Jan 06 18:45 +03</StartDateTime>
+		<StartTestTime>1736178313</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 06 18:45 +03</EndDateTime>
+		<EndTestTime>1736178313</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
