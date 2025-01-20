@@ -12,15 +12,17 @@ def generate_launch_description():
     urdf_path = LaunchConfiguration('urdf_path', default=os.path.join(get_package_share_directory('four_wheel_vehicle'), 'urdf', 'vehicle.urdf.xacro'))
     rviz_config_path = LaunchConfiguration('rviz_config_path', default=os.path.join(get_package_share_directory('robot_bringup'), 'rviz', 'gzb_rviz.rviz'))
     world_path = LaunchConfiguration('world_path', default=os.path.join(get_package_share_directory('robot_bringup'), 'world', 'world_farm.world'))
-    map_path = LaunchConfiguration('map_path', default=os.path.join(get_package_share_directory('robot_bringup'), 'map', 'farm_map.yaml'))
+    
+    nav2_map = os.path.join(get_package_share_directory('robot_bringup'), 'map', 'farm_map.yaml')
+    nav2_params = os.path.join(get_package_share_directory('nav2_bringup'), 'params', 'nav2_params.yaml')
+    use_sim_time = LaunchConfiguration("use_sim_time", default=True)
 
 
     return LaunchDescription([
         DeclareLaunchArgument('urdf_path', default_value=urdf_path, description='Path to URDF file'),
         DeclareLaunchArgument('rviz_config_path', default_value=rviz_config_path, description='Path to RViz config file'),
         DeclareLaunchArgument('world_path', default_value=world_path, description='Path to world file'),
-        DeclareLaunchArgument('map_path', default_value=map_path, description='Path to map file'),
-
+        
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -33,6 +35,17 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(os.path.join(FindPackageShare('gazebo_ros').find('gazebo_ros'), 'launch', 'gazebo.launch.py')),
             launch_arguments={'world': world_path}.items()),
 
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(get_package_share_directory("nav2_bringup"), "launch", "bringup_launch.py")
+            ),
+            launch_arguments=[
+                ("map", nav2_map),
+                ("use_sim_time", use_sim_time),
+                ("params_file", nav2_params),
+            ],
+        ),
+        
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
@@ -48,7 +61,7 @@ def generate_launch_description():
             name='rviz2',
             output='screen',
             arguments=['-d', rviz_config_path],
-            parameters=[{'use_sim_time': True}]
+            parameters=[{'use_sim_time': use_sim_time}]
         ),
 
         Node(
@@ -84,6 +97,6 @@ def generate_launch_description():
                 {'scale_angular.yaw': 1.0}
             ],
             arguments=['--ros-args', '--log-level', 'info']
-        )
+        ),
 
     ])
