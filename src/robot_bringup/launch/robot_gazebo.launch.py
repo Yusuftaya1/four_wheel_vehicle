@@ -20,11 +20,6 @@ def generate_launch_description():
         DeclareLaunchArgument('rviz_config_path', default_value=rviz_config_path, description='Path to RViz config file'),
         DeclareLaunchArgument('world_path', default_value=world_path, description='Path to world file'),
         DeclareLaunchArgument('map_path', default_value=map_path, description='Path to map file'),
-        
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_bringup'), 'launch', 'gazebo_launch.py')),
-            launch_arguments={'world': world_path}.items()
-        ),
 
         Node(
             package='robot_state_publisher',
@@ -54,5 +49,6 @@ def generate_launch_description():
             output='screen',
             arguments=['-d', rviz_config_path],
             parameters=[{'use_sim_time': True}]
-        ),
+        )
+
     ])

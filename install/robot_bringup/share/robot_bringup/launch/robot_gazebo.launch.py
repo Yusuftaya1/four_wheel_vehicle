@@ -20,11 +20,6 @@ def generate_launch_description():
         DeclareLaunchArgument('rviz_config_path', default_value=rviz_config_path, description='Path to RViz config file'),
         DeclareLaunchArgument('world_path', default_value=world_path, description='Path to world file'),
         DeclareLaunchArgument('map_path', default_value=map_path, description='Path to map file'),
-        
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_bringup'), 'launch', 'gazebo_launch.py')),
-            launch_arguments={'world': world_path}.items()
-        ),
 
         Node(
             package='robot_state_publisher',
@@ -55,4 +50,40 @@ def generate_launch_description():
             arguments=['-d', rviz_config_path],
             parameters=[{'use_sim_time': True}]
         ),
+
+        Node(
+            package='joy',
+            executable='joy_node',
+            name='joy_node',
+            parameters=[{
+                'deadzone': 0.05,
+                'autorepeat_rate': 1.0,
+                'coalesce_interval': 100
+            }],
+            arguments=['--ros-args', '--log-level', 'info']
+        ),
+
+        Node(
+            package='teleop_twist_joy',
+            executable='teleop_node',
+            name='teleop_twist_joy_node',
+            parameters=[
+                {'enable_button': -1},
+                {'require_enable_button': False},
+                {'axis_linear.x': 1},
+                {'axis_linear.y': 2},
+                {'axis_linear.z': 6},
+                {'axis_angular.pitch': 5},
+                {'axis_angular.roll': 7},
+                {'axis_angular.yaw': 3},
+                {'scale_linear.x': 1.0},
+                {'scale_linear.y': 1.0},
+                {'scale_linear.z': 1.0},
+                {'scale_angular.pitch': 1.0},
+                {'scale_angular.roll': 1.0},
+                {'scale_angular.yaw': 1.0}
+            ],
+            arguments=['--ros-args', '--log-level', 'info']
+        )
+
     ])
