@@ -38,3 +38,16 @@ def generate_launch_description():
             arguments=['--ros-args', '--log-level', 'info']
         )
     ])
+"""
+        Node(
+            package='joy',
+            executable='joy_node',
+            name='joy_node',
+            parameters=[{
+                'deadzone': 0.05,
+                'autorepeat_rate': 1.0,
+                'coalesce_interval': 100
+            }],
+            arguments=['--ros-args', '--log-level', 'info']
+        ),
+"""
