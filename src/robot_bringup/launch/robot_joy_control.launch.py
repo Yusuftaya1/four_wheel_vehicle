@@ -36,7 +36,7 @@ def generate_launch_description():
             executable='robot_state_publisher',
             name='robot_state_publisher',
             output='screen',
-            parameters=[{'robot_description': launch.substitutions.Command(['xacro ', urdf_path]), 'use_sim_time': True}]
+            parameters=[{'robot_description': launch.substitutions.Command(['xacro ', urdf_path]), 'use_sim_time': use_sim_time}]
         ),
 
         Node(
@@ -59,7 +59,7 @@ def generate_launch_description():
             executable='ekf_node',
             name='ekf_localization',
             output='screen',
-            parameters=[{'use_sim_time': True}, {'odom_frame': 'odom'}, {'base_frame': 'base_link'}]
+            parameters=[{'use_sim_time': True}, {'odom_frame': 'odom'}, {'base_frame': 'base_link'}]    
         ),
 
         Node(
