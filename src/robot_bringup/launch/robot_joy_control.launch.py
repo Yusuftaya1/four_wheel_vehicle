@@ -44,7 +44,7 @@ def generate_launch_description():
             executable='static_transform_publisher',
             name='static_transform_publisher',
             arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom']
-        ),
+        ),  
 
         Node(
             package='nav2_amcl',
