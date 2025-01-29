@@ -1,0 +1,31 @@
+[0.103s] Invoking command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/four_wheel_vehicle -- -j8 -l8
+[0.343s] Invoked command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/four_wheel_vehicle -- -j8 -l8
+[0.407s] Invoking command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/four_wheel_vehicle
+[0.464s] -- Install configuration: ""
+[0.465s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf
+[0.465s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/camera.xacro
+[0.466s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/base.xacro
+[0.475s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/vehicle.urdf.xacro
+[0.476s] -- Installing: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/lidar.xacro
+[0.478s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/base_gazcbo.xacro
+[0.480s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//urdf/common_properties.xacro
+[0.481s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//launch
+[0.482s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//launch/display_vehicle.launch.py
+[0.482s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//rviz
+[0.482s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle//rviz/rviz_fwv.rviz
+[0.483s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/ament_index/resource_index/package_run_dependencies/four_wheel_vehicle
+[0.484s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/ament_index/resource_index/parent_prefix_path/four_wheel_vehicle
+[0.498s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/ament_prefix_path.sh
+[0.501s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/ament_prefix_path.dsv
+[0.510s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/path.sh
+[0.511s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/environment/path.dsv
+[0.515s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.bash
+[0.517s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.sh
+[0.518s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.zsh
+[0.519s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/local_setup.dsv
+[0.520s] -- Installing: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.dsv
+[0.520s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/ament_index/resource_index/packages/four_wheel_vehicle
+[0.521s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/cmake/four_wheel_vehicleConfig.cmake
+[0.521s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/cmake/four_wheel_vehicleConfig-version.cmake
+[0.527s] -- Up-to-date: /home/tayya/four_wheel_ws/install/four_wheel_vehicle/share/four_wheel_vehicle/package.xml
+[0.592s] Invoked command in '/home/tayya/four_wheel_ws/build/four_wheel_vehicle' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/four_wheel_vehicle

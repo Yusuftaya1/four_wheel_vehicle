@@ -2378,10 +2378,10 @@
       <pose>12.1898 10.7464 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>752 582000000</sim_time>
-      <real_time>64 628753986</real_time>
-      <wall_time>1737617152 827284144</wall_time>
-      <iterations>60399</iterations>
+      <sim_time>804 461000000</sim_time>
+      <real_time>54 699098641</real_time>
+      <wall_time>1737617343 269707514</wall_time>
+      <iterations>51879</iterations>
       <model name='ground'>
         <pose>16.1373 -0.708324 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2832,6 +2832,16 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='hedge_14_clone_clone'>
+        <pose>1.25195 3.91913 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>1.25195 3.91913 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='hedge_2'>
         <pose>10.8005 14.1454 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -2903,10 +2913,10 @@
         </link>
       </model>
       <model name='hedge_5'>
-        <pose>3.59722 1.96186 0 0 -0 0</pose>
+        <pose>2.82622 1.91453 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.59722 1.96186 0 0 -0 0</pose>
+          <pose>2.82622 1.91453 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -2953,37 +2963,37 @@
         </link>
       </model>
       <model name='vehicle'>
-        <pose>0.000699 0.001657 0.03048 0 -0 0.001146</pose>
+        <pose>0.0013 0.00308 0.03048 0 -0 0.002117</pose>
         <scale>1 1 1</scale>
         <link name='base_footprint'>
-          <pose>0.000699 0.001657 0.03048 0 -0 0.001146</pose>
-          <velocity>-0.000497 -5.7e-05 0.003054 6.8e-05 0.012662 -0.000903</velocity>
-          <acceleration>4.92821 -0.066393 5.98964 0.070248 0.246792 -0.963914</acceleration>
-          <wrench>30.0621 -0.404999 36.5368 0 -0 0</wrench>
+          <pose>0.0013 0.00308 0.03048 0 -0 0.002117</pose>
+          <velocity>5e-06 -3e-06 -0 -3e-06 -3e-06 2.8e-05</velocity>
+          <acceleration>-0.000573 0.001008 -2.1e-05 0.000576 0.000592 -0.001518</acceleration>
+          <wrench>-0.003495 0.006146 -0.000128 0 -0 0</wrench>
         </link>
         <link name='front_left_wheel_link'>
-          <pose>0.24044 0.226931 0.13048 -3e-06 0.009084 0.001146</pose>
-          <velocity>0.00116 -0.00014 -8e-06 0.001401 0.011708 -0.000913</velocity>
-          <acceleration>2.26334 -0.141521 -0.006216 -1.74917 -0.820192 1.99879</acceleration>
-          <wrench>2.26334 -0.141521 -0.006216 0 -0 0</wrench>
+          <pose>0.240823 0.228588 0.13048 -4e-06 0.016964 0.002117</pose>
+          <velocity>1.1e-05 3e-06 0 -1.1e-05 0.00011 2.9e-05</velocity>
+          <acceleration>-0.001504 0.000231 4e-06 -0.002188 -0.014578 -0.001757</acceleration>
+          <wrench>-0.001504 0.000231 4e-06 0 -0 0</wrench>
         </link>
         <link name='front_right_wheel_link'>
-          <pose>0.240956 -0.223068 0.13048 2e-06 0.00512 0.001146</pose>
-          <velocity>0.000589 -0.000396 -2e-05 -0.000836 0.012893 -0.000858</velocity>
-          <acceleration>1.69375 -0.396944 -0.028323 -0.804721 -1.06263 -0.548901</acceleration>
-          <wrench>1.69375 -0.396944 -0.028323 0 -0 0</wrench>
+          <pose>0.241775 -0.22141 0.13048 5e-06 0.009423 0.002117</pose>
+          <velocity>1.3e-05 0 -1e-06 -3.3e-05 0.000139 3.6e-05</velocity>
+          <acceleration>-0.000647 0.000373 -9.7e-05 -0.003442 -0.006508 -0.001087</acceleration>
+          <wrench>-0.000647 0.000373 -9.7e-05 0 -0 0</wrench>
         </link>
         <link name='rear_left_wheel_link'>
-          <pose>-0.239559 0.226381 0.13048 -3e-06 -0.008904 0.001147</pose>
-          <velocity>0.00112 7.3e-05 0.00617 -0.000696 0.011115 -0.000514</velocity>
-          <acceleration>2.113 0.049016 12.3067 -1.17504 -1.28027 -0.548526</acceleration>
-          <wrench>2.113 0.049016 12.3067 0 -0 0</wrench>
+          <pose>-0.239176 0.227571 0.13048 -6e-06 -0.016469 0.002117</pose>
+          <velocity>-1.9e-05 -3e-06 -2e-06 6.5e-05 -0.000195 3.1e-05</velocity>
+          <acceleration>0.001699 0.000778 0.000198 -0.007895 0.016575 0.002292</acceleration>
+          <wrench>0.001699 0.000778 0.000198 0 -0 0</wrench>
         </link>
         <link name='rear_right_wheel_link'>
-          <pose>-0.239043 -0.223618 0.13048 0 -6.3e-05 0.001147</pose>
-          <velocity>0.000919 6.8e-05 0.006075 -0.000661 0.009279 -5.6e-05</velocity>
-          <acceleration>1.8712 0.127462 12.1919 2.74522 -0.021355 3.04465</acceleration>
-          <wrench>1.8712 0.127462 12.1919 0 -0 0</wrench>
+          <pose>-0.238224 -0.222426 0.13048 6e-06 -0.000167 0.002116</pose>
+          <velocity>1.2e-05 -7e-06 1e-06 2.5e-05 0.000124 3e-05</velocity>
+          <acceleration>-0.000467 0.000657 -0.000161 -0.006571 -0.004582 -0.000269</acceleration>
+          <wrench>-0.000467 0.000657 -0.000161 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -2992,7 +3002,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-2.34118 -14.4775 23.4812 0 0.885796 1.18017</pose>
+        <pose>3.52847 -1.36293 9.47004 -0 1.2018 1.52017</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -3650,6 +3660,50 @@
         <kinematic>0</kinematic>
       </link>
       <pose>-0.837614 11.5455 0 0 0 -1.54908</pose>
+    </model>
+    <model name='hedge_14_clone_clone'>
+      <static>1</static>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://hedge/model.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://hedge/model/mint_20julep2.jpg</uri>
+              <name>Standard_1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://hedge/model.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>1.25195 3.91913 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>

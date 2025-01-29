@@ -1,0 +1,4 @@
+Invoking command in '/home/tayya/four_wheel_ws/build/robot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/robot_bringup -- -j8 -l8
+Invoked command in '/home/tayya/four_wheel_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tayya/four_wheel_ws/build/robot_bringup -- -j8 -l8
+Invoking command in '/home/tayya/four_wheel_ws/build/robot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/robot_bringup
+Invoked command in '/home/tayya/four_wheel_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tayya/four_wheel_ws/build/robot_bringup

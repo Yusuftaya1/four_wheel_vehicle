@@ -20,6 +20,25 @@
         </link>
     </xacro:macro>
 
+    <xacro:macro name="wheel_holder_link_xacro" params="prefix holder_mass holder_x holder_y holder_z">
+        <link name="${prefix}_wheel_holder_link">
+            <visual>
+                <geometry>
+                    <box size="${holder_x} ${holder_y} ${holder_z}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <material name="blue"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${holder_x} ${holder_y} ${holder_z}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+            </collision>
+            <xacro:box_inertia m="${holder_mass}" l="${holder_x}" w="${holder_y}" h="${holder_z}" xyz="0 0 ${holder_z}" rpy="0 0 0"/>
+        </link>
+    </xacro:macro>
+
     <xacro:macro name = "wheel_link" params="prefix wheel_mass wheel_radius wheel_length">
         <link name="${prefix}_wheel_link">
             <visual>
@@ -38,7 +57,7 @@
             <xacro:wheel_inertia m = "1.0" r = "${2*wheel_radius}" h = "${2*wheel_length}" xyz="0 0 0" rpy="1.5708 0 0"/>
         </link>
     </xacro:macro>
-    
+
     <xacro:macro name = "box_inertia" params = "m l w h xyz rpy">
         <inertial>
             <origin xyz = "${xyz}" rpy = "${rpy}" />
@@ -58,21 +77,30 @@
             izz = "${(m/12) * (3*r*r + h*h)}"/>
         </inertial>
     </xacro:macro>
-    
+
     <xacro:macro name = "base_joint">
         <joint name="base_joint" type="fixed">
             <parent link="base_footprint"/>
             <child link="base_link"/>
-            <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+            <origin xyz="0 0 ${wheel_radius + holder_x}" rpy="0 0 0"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="wheel_holder_joint" params="prefix x y z">
+        <joint name="${prefix}_wheel_holder_joint" type="continuous">
+            <parent link="base_link"/>
+            <child link="${prefix}_wheel_holder_link"/>
+            <origin xyz="${x} ${y} ${z}" rpy="0 1.570796325 0"/>
         </joint>
     </xacro:macro>
 
     <xacro:macro name="wheel_joint" params="prefix x y z">
         <joint name="${prefix}_wheel_joint" type="continuous">
-            <parent link="base_link"/>
+            <parent link="${prefix}_wheel_holder_link"/>
             <child link="${prefix}_wheel_link"/>
             <origin xyz="${x} ${y} ${z}" rpy="0 0 0"/>
             <axis xyz="0 1 0"/>
         </joint>
     </xacro:macro>
+    
 </robot>

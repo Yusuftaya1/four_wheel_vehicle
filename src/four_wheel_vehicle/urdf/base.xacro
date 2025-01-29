@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:include filename = "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/urdf/common_properties.xacro"/>
@@ -13,10 +12,15 @@
     <xacro:property name="wheel_radius" value="0.1" />
     <xacro:property name="wheel_length" value="0.05" />
 
+    <xacro:property name="holder_mass" value="1.0" />
+    <xacro:property name="holder_x" value="0.2" />
+    <xacro:property name="holder_y" value="0.05" />
+    <xacro:property name="holder_z" value="0.05" />
+
     <material name="blue">
         <color rgba="0 0 0.5 1"/>
     </material>
-    
+
     <material name="grey">
         <color rgba="0.5 0.5 0.5 1"/>
     </material>
@@ -30,20 +34,29 @@
     </material>
 
     <link name="base_footprint"/>
-    
+
     <xacro:base_macro base_mass="${base_mass}" base_length = "${base_length}" base_width = "${base_width}" base_height = "${base_height}"/>
-    
+
+    <xacro:base_joint/>
+
+    <xacro:wheel_holder_link_xacro prefix="front_left" holder_mass="${holder_mass}" holder_x="${holder_x}" holder_y="${holder_y}" holder_z="${holder_z}"/>
+    <xacro:wheel_holder_link_xacro prefix="front_right" holder_mass="${holder_mass}" holder_x="${holder_x}" holder_y="${holder_y}" holder_z="${holder_z}"/>
+    <xacro:wheel_holder_link_xacro prefix="rear_left" holder_mass="${holder_mass}" holder_x="${holder_x}" holder_y="${holder_y}" holder_z="${holder_z}"/>
+    <xacro:wheel_holder_link_xacro prefix="rear_right" holder_mass="${holder_mass}" holder_x="${holder_x}" holder_y="${holder_y}" holder_z="${holder_z}"/>
+
     <xacro:wheel_link prefix = "front_left"  wheel_mass = "${wheel_mass}" wheel_radius = "${wheel_radius}" wheel_length="${wheel_length}"/>
     <xacro:wheel_link prefix = "front_right" wheel_mass = "${wheel_mass}" wheel_radius = "${wheel_radius}" wheel_length="${wheel_length}"/>
     <xacro:wheel_link prefix = "rear_left"   wheel_mass = "${wheel_mass}" wheel_radius = "${wheel_radius}" wheel_length="${wheel_length}"/>
     <xacro:wheel_link prefix = "rear_right"  wheel_mass = "${wheel_mass}" wheel_radius = "${wheel_radius}" wheel_length="${wheel_length}"/>
 
-    <xacro:base_joint/>
- 
-    <xacro:wheel_joint prefix="front_left" x="${base_length / 2.5}" y="${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
-    <xacro:wheel_joint prefix="front_right" x="${base_length / 2.5}" y="-${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
-    <xacro:wheel_joint prefix="rear_left" x="-${base_length / 2.5}" y="${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
-    <xacro:wheel_joint prefix="rear_right" x="-${base_length / 2.5}" y="-${(base_width / 2.0) + (wheel_length / 2.0)}" z="0"/>
-    
+    <xacro:wheel_holder_joint prefix="front_left" x="0.3" y="0.2" z="-0.1"/>
+    <xacro:wheel_holder_joint prefix="front_right" x="0.3" y="-0.2" z="-0.1"/>
+    <xacro:wheel_holder_joint prefix="rear_left" x="-0.3" y="0.2" z="-0.1"/>
+    <xacro:wheel_holder_joint prefix="rear_right" x="-0.3" y="-0.2" z="-0.1"/>
+
+    <xacro:wheel_joint prefix="front_left" x="0.1" y="${holder_z}" z="0.0"/>
+    <xacro:wheel_joint prefix="front_right" x="0.1" y="${-holder_z}" z="0.0"/>
+    <xacro:wheel_joint prefix="rear_left" x="0.1" y="${holder_z}" z="0.0"/>
+    <xacro:wheel_joint prefix="rear_right" x="0.1" y="${-holder_z}" z="0.0"/>
 
 </robot>
