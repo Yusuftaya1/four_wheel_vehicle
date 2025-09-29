@@ -1,8 +1,8 @@
-# Install script for directory: /home/tayya/four_wheel_ws/src/four_wheel_vehicle
+# Install script for directory: /home/tayya/four_wheel_vehicle/src/four_wheel_vehicle
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tayya/four_wheel_ws/install/four_wheel_vehicle")
+  set(CMAKE_INSTALL_PREFIX "/home/tayya/four_wheel_vehicle/install/four_wheel_vehicle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,18 +44,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle/" TYPE DIRECTORY FILES
-    "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/urdf"
-    "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/launch"
-    "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/rviz"
+    "/home/tayya/four_wheel_vehicle/src/four_wheel_vehicle/urdf"
+    "/home/tayya/four_wheel_vehicle/src/four_wheel_vehicle/launch"
+    "/home/tayya/four_wheel_vehicle/src/four_wheel_vehicle/rviz"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/four_wheel_vehicle")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/four_wheel_vehicle")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/four_wheel_vehicle")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/four_wheel_vehicle")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,7 +63,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle/environment" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle/environment" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -71,42 +71,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle/environment" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle/environment" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_index/share/ament_index/resource_index/packages/four_wheel_vehicle")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_index/share/ament_index/resource_index/packages/four_wheel_vehicle")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle/cmake" TYPE FILE FILES
-    "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_core/four_wheel_vehicleConfig.cmake"
-    "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/ament_cmake_core/four_wheel_vehicleConfig-version.cmake"
+    "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_core/four_wheel_vehicleConfig.cmake"
+    "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/ament_cmake_core/four_wheel_vehicleConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_ws/src/four_wheel_vehicle/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/four_wheel_vehicle" TYPE FILE FILES "/home/tayya/four_wheel_vehicle/src/four_wheel_vehicle/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -117,5 +117,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tayya/four_wheel_ws/build/four_wheel_vehicle/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

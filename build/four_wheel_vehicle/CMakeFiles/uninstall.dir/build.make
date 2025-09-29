@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tayya/four_wheel_ws/src/four_wheel_vehicle
+CMAKE_SOURCE_DIR = /home/tayya/four_wheel_vehicle/src/four_wheel_vehicle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tayya/four_wheel_ws/build/four_wheel_vehicle
+CMAKE_BINARY_DIR = /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/tayya/four_wheel_ws/build/four_wheel_vehicle && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tayya/four_wheel_ws/src/four_wheel_vehicle /home/tayya/four_wheel_ws/src/four_wheel_vehicle /home/tayya/four_wheel_ws/build/four_wheel_vehicle /home/tayya/four_wheel_ws/build/four_wheel_vehicle /home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tayya/four_wheel_vehicle/src/four_wheel_vehicle /home/tayya/four_wheel_vehicle/src/four_wheel_vehicle /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tayya/four_wheel_ws/src/four_wheel_vehicle
+CMAKE_SOURCE_DIR = /home/tayya/four_wheel_vehicle/src/four_wheel_vehicle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tayya/four_wheel_ws/build/four_wheel_vehicle
+CMAKE_BINARY_DIR = /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/four_wheel_vehicle_uninstall.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/four_wheel_vehicle_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/four_wheel_vehicle_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/four_wheel_vehicle_uninstall.dir/build.make CMakeFiles/four_wheel_vehicle_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/four_wheel_vehicle_uninstall.dir/build.make CMakeFiles/four_wheel_vehicle_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles --progress-num= "Built target four_wheel_vehicle_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles --progress-num= "Built target four_wheel_vehicle_uninstall"
 .PHONY : CMakeFiles/four_wheel_vehicle_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/four_wheel_vehicle_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/four_wheel_vehicle_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_ws/build/four_wheel_vehicle/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tayya/four_wheel_vehicle/build/four_wheel_vehicle/CMakeFiles 0
 .PHONY : CMakeFiles/four_wheel_vehicle_uninstall.dir/rule
 
 # Convenience name for target.
